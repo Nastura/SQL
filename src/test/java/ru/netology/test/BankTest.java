@@ -31,7 +31,7 @@ public class BankTest {
     }
 
     @Test
-    void shouldSuccesFullLogin() {
+    void fullLogin() {
         var authInfo = DataHelper.getUser();
         var verificatinPage = loginPage.validLogin(authInfo);
         var verificationCode = SqlHelper.getVerifaicationCode();

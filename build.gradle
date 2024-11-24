@@ -15,6 +15,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     testImplementation 'com.codeborne:selenide:6.1.2'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    testImplementation 'commons-dbutils:commons-dbutils:1.7'
+    testImplementation 'com.mysql:mysql-connector-j:8.2.0'
 }
 
 test {
