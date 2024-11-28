@@ -15,12 +15,12 @@ import static ru.netology.data.SqlHelper.cleanDatabase;
 public class BankTest {
     LoginPage loginPage;
 
-    @AfterEach
+    @AfterEach // удаляем коды аутентификации
     void tableСlearingAuthCode() {
         cleanAuthCode();
     }
 
-    @AfterAll
+    @AfterAll  // очистка базы данных
     static void clearingAllTables() {
         cleanDatabase();
     }
@@ -28,6 +28,7 @@ public class BankTest {
     @BeforeEach
     void setUp() {
         loginPage = open("http://localhost:9999", LoginPage.class);
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Acer\\Desktop\\QAMID-88\\Modul-Auto-Test\\chromedriver-win64");
     }
 
     @Test
